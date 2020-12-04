@@ -2,10 +2,11 @@ pipeline {
       agent any
     stages {
         stage ('checkout') {
-            steps 
+              steps {
               echo 'cloning the repo in to local'
+              } 
         }
-    }   
+       
         stage ('build') {
             steps {
               echo 'build the code'
